@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loginFragment"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/sendDocFragment"
+        android:name="br.com.app4lawyer.ui.send.SendDocFragment"
+        tools:layout="@layout/send_doc_fragment"
+        android:label="Enviar documento" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="br.com.app4lawyer.ui.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" />
+    <fragment
+        android:id="@+id/documentFragment"
+        android:name="br.com.app4lawyer.ui.document.DocumentFragment"
+        android:label="Documento Formatado"
+        tools:layout="@layout/document_fragment" />
+    <fragment
+        android:id="@+id/chooseFragment"
+        android:name="br.com.app4lawyer.ui.choose.ChooseFragment"
+        android:label="choose_fragment"
+        tools:layout="@layout/choose_fragment" />
+</navigation>
